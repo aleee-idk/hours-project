@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/hours-project/static/css/main.073c9b0a.css",
+    "main.js": "/hours-project/static/js/main.629ba1c2.js",
+    "static/js/787.e8413d90.chunk.js": "/hours-project/static/js/787.e8413d90.chunk.js",
+    "index.html": "/hours-project/index.html",
+    "main.073c9b0a.css.map": "/hours-project/static/css/main.073c9b0a.css.map",
+    "main.629ba1c2.js.map": "/hours-project/static/js/main.629ba1c2.js.map",
+    "787.e8413d90.chunk.js.map": "/hours-project/static/js/787.e8413d90.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.629ba1c2.js"
+  ]
+}

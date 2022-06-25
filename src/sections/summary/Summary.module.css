@@ -1,0 +1,16 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+}
+
+.info_group {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+
+  margin-bottom: 1rem;
+}
+
+.info_group > *:first-child {
+  flex: 30% 0 0;
+}

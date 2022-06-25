@@ -1,0 +1,17 @@
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.hstack {
+  display: flex;
+  align-items: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.w-100 {
+  width: 100%;
+}

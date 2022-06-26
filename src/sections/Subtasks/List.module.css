@@ -1,0 +1,14 @@
+#subtasks {
+  margin-bottom: 3rem;
+}
+
+#addButton {
+  width: 6rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1.5rem;
+}

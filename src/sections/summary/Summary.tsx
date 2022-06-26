@@ -1,7 +1,8 @@
-import React from "react";
+import { useSubtasksContext } from "../../Context/useSubtask";
 import style from "./Summary.module.css";
 
 export const Summary = (props: {}) => {
+  const { data } = useSubtasksContext();
   return (
     <div>
       <h2>Summary</h2>
@@ -14,17 +15,17 @@ export const Summary = (props: {}) => {
 
         <div className={style.info_group}>
           <label>N° Subtasks</label>
-          <div>{12}</div>
+          <div>{data.totalSubtasks}</div>
         </div>
 
         <div className={style.info_group}>
           <label>Time (Hours)</label>
-          <div>{1}</div>
+          <div>{data.totalHours}</div>
         </div>
 
         <div className={style.info_group}>
           <label>Time (Minutes)</label>
-          <div>60</div>
+          <div>{data.totalMinutes}</div>
         </div>
       </section>
     </div>

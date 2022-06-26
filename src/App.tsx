@@ -4,15 +4,21 @@ import { Navbar } from "./sections/navbar/Navbar";
 import { SubtaskList } from "./sections/Subtasks/List";
 import { Summary } from "./sections/summary/Summary";
 
-function App() {
-  return (
-    <div className="container">
-      <Navbar />
+import { SubtasksContext, useSubtasksReducer } from "./Context/useSubtask";
 
-      <Information />
-      <Summary />
-      <SubtaskList />
-    </div>
+function App() {
+  const [data, dispatch] = useSubtasksReducer();
+
+  return (
+    <SubtasksContext.Provider value={{ data, dispatch }}>
+      <div className="container">
+        <Navbar />
+
+        <Information />
+        <Summary />
+        <SubtaskList />
+      </div>
+    </SubtasksContext.Provider>
   );
 }
 
